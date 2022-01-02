@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <title>Kaushik Vejju: Personal Website</title>
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <!-- Header: easy way to do is emmet abbreviation
+    This can be accomplished by saying header#showcase.grid-->
+    <header>
+
+        <!-- Navigation-->
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#edu">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+
+        <!-- background has to be different element-->
+        <br>
+        <div class= box1>
+            <div class = "box1-image">
+                <img class = "kaushik" src = "img/kaushik.PNG" 
+                 height = "250" width = "250" alt = "Kaushik Vejju">
+            </div>
+            <div class = "box1-content">
+                <h1 class = "hello"> Hello, I'm <b class = "my-name">Kaushik</b></h1>
+                <p> I'm a Computer Science student at the
+                University of Maryland with an interest in data 
+                science and machine learning. Welcome to my site,
+                and feel free to explore.
+                </p>
+                
+                <div class = "social-list">
+                    <a class = "social-list-item" href = "https://www.linkedin.com/in/kaushik-vejju-97b4731ab/" class = "footer-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+             
+                    <a class = "social-list-item" href = "www.github.com" class = "footer-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <button class = "header-button" type="button">Resume</button>
+             
+                </div>
+
+            </div>
+        </div>
+
+        
+        
+        <!-- Create an a tag with a class of btn-->
+
+    </header>
+    <br>
+    <main id="id">
+
+        <hr width = 900px>
+        <!-- Section A will be education-->
+        <section id = "edu" class = "section-education">
+            <h1 class = "education-title" style= "text-align: center"> Education <i class="fas fa-school"></i></h1>
+            <div class="grid-container-element">
+
+                <div class="grid-child-element purple">
+                     <h2 class = "monroe"> Monroe Township High School </h2>
+                     <i>2017-2021</i>
+                     <img  class = "school-img" src = "img/falcon.png">
+                     <p><b>Revelant Coursework:</b> AP Calculus AB, AP Computer Science A, AP Microeconomics
+                         AP Language & Composition, AP Physics 1 & 2, AP Psychology, AP Statistics</p>
+                     
+                </div>
+                <div class="grid-child-element green">
+                    <h2 class = "umd"> University of Maryland: College Park </h2>
+                     <i>2021-Present</i>
+                     <img  class = "school-img" src = "img/terplogo.png">
+                     <p><b>Revelant Coursework:</b> Calculus II, Object Oriented Programming II (Data Structures)</p>
+                     
+                    </div>
+            </div>
+        </section>
+
+        <hr width = 900px>
+        <!-- Revise this section-->
+        
+        <section id = "experience" class = "section-experience">
+            <h1 class = "title-experience" style= "text-align: center"> Experience <i class="fas fa-briefcase"></i></h1>
+            <section class = "timeline">
+            <div class = "time">
+
+                <!--For each heading, make a different color-->
+                <h2> Software Engineer Intern</h2>
+                <h3> Finacle Soft Inc.</h3>
+                <h4> June 2020 - August 2020</h4>
+            </div>
+            <div  class = "time">
+                <h2>Instructor</h2>
+                <h3>STEAM Works Studio</h3>
+                <h4> July 2021 - September 2021</h4>
+            </div>
+            <div  class = "time">
+                <h2>Junior Quantitative Analyst</h2>
+                <h3>Smith Investment Fund</h3>
+                <h4> October 2021 - Present</h4>
+            </div>
+            </section>
+        </section>
+
+        <hr width = 900px>
+
+        <section id = "projects" class = "section-projects">
+            <h1 class = "title-projects" style= "text-align: center"> My Projects <i class="fas fa-code"></i></h1>
+            <div class="projects-container">
+                <div class = "project">
+                    <h2>Netflix Dataset Analysis</h2>
+                    <p> Created using Kaggle Kernels. Utilized Python libraries & packages 
+                        such as pandas, numpy, and seaborn to analyze and visualize Netflix data from
+                        2019.
+                    </p>
+                    <button class = "project-button" type="button">Click To View</button>
+
+                    
+                </div>
+                <div class = "project">
+                    <h2>Java Fighting Project</h2>
+                    <p> Utilized Java to develop a two player game that simulates a fight between two 
+                        characters. The game has a twist however: players can only attack when guessing the
+                        correct random number.
+                    </p>
+                    <button class = "project-button" type="button">Click To View</button>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            
+        </footer>
+
+    </main>
+
+</body>
+</html>
