@@ -17,7 +17,7 @@
 
         <!-- Navigation-->
         <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
+            <a href="#home">Home</a>
             <a href="#edu">Education</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
@@ -51,7 +51,6 @@
                 science and machine learning. Welcome to my site,
                 and feel free to explore.
                 </p>
-                
                 <div class = "social-list">
                     <a class = "social-list-item" href = "https://www.linkedin.com/in/kaushik-vejju-97b4731ab/" class = "footer-link">
                         <i class="fa-brands fa-linkedin"></i>
@@ -61,12 +60,16 @@
                         <i class="fa-brands fa-github"></i>
                     </a>
 
-                    <button class = "header-button" type="button">Resume
+                    <button id = "resumeButton" class = "header-button" type="button">Resume
                         <a href = "https://www.hackerrank.com/"></a>
                     </button>
-             
+                    <script type="text/javascript">
+                        document.getElementById("resumeButton").onclick = function () {
+                            location.href = "";
+                        };
+                    </script>
                 </div>
-
+                
             </div>
         </div>
 
@@ -88,7 +91,7 @@
                      <h2 class = "monroe"> Monroe Township High School </h2>
                      <i>2017-2021</i>
                      <img  class = "school-img" src = "img/falcon.png">
-                     <p><b>Revelant Coursework:</b> AP Calculus AB, AP Computer Science A, AP Microeconomics
+                     <p><b>Revelant Coursework:</b> AP Calculus AB, AP Computer Science A, AP Microeconomics,
                          AP Language & Composition, AP Physics 1 & 2, AP Psychology, AP Statistics</p>
                      
                 </div>
@@ -112,7 +115,7 @@
                 <div class="text-wrapper right">
                     <!-- all text content of timeline -->
                     <div class="content">
-                        <p class = "job">Junior Quantitative Analyst</p>
+                        <p class = "job"><b>Junior Quantitative Analyst</b></p>
                         <p>Smith Investment Fund</p>
                         <p>October 2021 - Present</p>
                     </div>
@@ -123,18 +126,18 @@
                 <div class="text-wrapper right">
                     <!-- all text content of timeline -->
                     <div class="content">
-                        <p class = "job">Software Engineer Intern</p>
+                        <p class = "job"><b>Software Engineer Intern</b></p>
                         <p>Finacle Soft Inc.</p>
-                        <p>July 2020-September 2020</p>
+                        <p>July 2020 - September 2020</p>
                     </div>
                 </div>
                 <!-- event 1st of timeline -->
                 <div class="text-wrapper right">
                     <!-- all text content of timeline -->
                     <div class="content">
-                        <p class = "job">Instructor</p>
+                        <p class = "job"><b>Instructor</b></p>
                         <p>STEAM Works Studio</p>
-                        <p>July 2021-September 2021</p>
+                        <p>July 2021 - September 2021</p>
                     </div>
                 </div>
                 <!-- event 1st of timeline -->
@@ -155,14 +158,19 @@
                         such as pandas, numpy, and seaborn to analyze and visualize Netflix data from
                         2019.
                     </p>
-                    <button class = "project-button" type="button">Click To View</button>
+                    <button id = "myPython" class = "project-button" type="button">Click To View</button>
+                    <script type="text/javascript">
+                        document.getElementById("myPython").onclick = function () {
+                            location.href = "https://www.kaggle.com/kaushikvejju/netflixdataset/notebook";
+                        };
+                    </script>
 
                     
                 </div>
                 <div class = "project">
                     <h2>Java Fighting Project</h2>
                     <p> Utilized Java to develop a two player game that simulates a fight between two 
-                        characters. The game has a twist however: players can only attack when guessing the
+                        characters. However, the game has a twist: players can only attack when guessing the
                         correct random number.
                     </p>
                     <button class = "project-button" type="button">Click To View</button>
@@ -170,12 +178,9 @@
                 </div>
             </div>
         </section>
-
-        <footer>
-            
-        </footer>
-
     </main>
+    <footer>
+    </footer>
 
 </body>
 </html>

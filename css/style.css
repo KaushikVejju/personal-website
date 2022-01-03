@@ -18,8 +18,10 @@ header{
    margin: 0 auto;
 }
 .header-button{
+    text-decoration: none;
+    padding: 0.5em;
     color: white;
-    background-color:rgba(99, 58, 165, 0.863);   
+    background-color:rgb(104, 74, 189);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
 }
@@ -29,6 +31,10 @@ header{
 }
 p{
     font-size: 18px;
+}
+
+h2{
+    color:rgb(130, 122, 238);
 }
 
 .box1{
@@ -68,14 +74,13 @@ p{
 }
 
 .social-list{
-    display:flex;
-    
+    display: flex;
 }
-
 .social-list-item{
     font-size: 40px;
     color: rgb(104, 74, 189);
     margin-right: 0.5em;
+    text-decoration: none;
 }
 
 @media  screen and (max-width: 600px) {
@@ -86,9 +91,11 @@ p{
     }
  
     .box1{
-        display: block;
+        display: grid;
         text-align: center;
     }
+
+    
 
     
     
@@ -117,15 +124,10 @@ p{
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: rgb(48, 31, 206);
+  background-color: rgb(39, 12, 75);
+  color: rgb(188, 182, 240);
 }
 
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #0b0631;
-  color: white;
-}
 
 .topnav .icon {
     display: none;
@@ -161,9 +163,10 @@ p{
      visibility: hidden;
  }
  .education-title{
-
+    margin: 0 auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
      max-width: 200px;
-     margin: 0 auto;
      padding: 0.2em;
      border-radius: 10px;
      background-color:rgb(103, 33, 216);
@@ -244,10 +247,11 @@ p{
 }
 
 .title-experience{
+    margin: 0 auto;
+    margin-top: 0.5em;
     font-family: 'Nunito', sans-serif ;
     color: white;
     max-width: 200px;
-     margin: 0 auto;
      padding: 0.2em;
      border-radius: 10px;
      background-color:rgb(103, 33, 216);
@@ -298,6 +302,7 @@ p{
 }
 /*content box colour padding and radius for circular corner*/
 .content{
+    width: 100%;
 	padding: 0.7em;
     background-color:rgb(43, 16, 73);
 	border-radius: 4px;
@@ -320,6 +325,8 @@ p{
 /*My Projects Section*/
 .section-projects{
 
+    animation: fadein 2s;
+
     background-color: rgb(64, 48, 107);
     border-radius: 10px;
 
@@ -330,9 +337,10 @@ p{
 }
 
 .title-projects{
+    margin: 0 auto;
+    margin-top: 0.5em;
     color: white;
     max-width: 210px;
-     margin: 0 auto;
      padding: 0.2em;
      border-radius: 10px;
      background-color:rgb(103, 33, 216);
@@ -381,6 +389,12 @@ p{
     
     
 }
+
+/*Footer*/
+footer{
+    height: 2em;
+}
+
 
 
 /* Animations */
