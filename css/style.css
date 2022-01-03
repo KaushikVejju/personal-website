@@ -28,7 +28,7 @@ header{
 
 }
 p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .box1{
@@ -243,61 +243,6 @@ p{
     
 }
 
-.timeline{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 900px;
-    border-left: 2px solid #7768b8;
-    margin-top: 10px;
-    margin-right: 195px;
-    margin-left: 195px;
-    margin-bottom: 20px;
-}
-
-/* Each part of the timeline */
-.time{
-    border-radius: 10px;
-    margin: 0 auto;
-    background-color: rgb(20, 9, 61);
-    padding: 10px 25px;
-    font-size: 14px;
-    border: 1px solid rgb(255, 255, 255);
-    position: relative;
-    margin-bottom: 10px;
-    width: 400px;
-}
-
-.time:hover{
-
-    background-color: black;
-    
-}
-
-.time:before{
-    content: '';
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color:rgb(48, 37, 112);
-    border: 4px solid rgb(124, 107, 218);
-    position: absolute;
-    top: 10px;
-    left: -40px;
-}
-
-.time:after{
-    content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent rgb(112, 77, 192) transparent transparent;
-    border-width: 8px;
-    position: absolute;
-    left: -17px;
-    top: 10px;
-}
-
 .title-experience{
     font-family: 'Nunito', sans-serif ;
     color: white;
@@ -308,19 +253,68 @@ p{
      background-color:rgb(103, 33, 216);
 }
 
-@media  screen and (max-width: 600px) {
-    
-    .section-experience{
-        display: block;
-    }
-
-    .time{
-        
-    }
-
-    
-    
+.main-container{
+	position: relative;
+    margin: 1em;
 }
+/*creating line for timeline*/
+.main-container::after{
+	content: '';
+	position: absolute;
+	width: 2px;
+	background-color: #6e09e2;
+	top:0;
+	bottom: 0;
+	right: 70%;
+}
+/*Adjusting box of all content*/
+.text-wrapper{
+	padding: 1em 2em;
+	position: relative;
+	width:50%;
+	box-sizing: border-box;
+	
+
+}
+.text-wrapper:after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:rgb(48, 37, 112);
+    border: 4px solid rgb(124, 107, 218);
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+	
+}
+
+/*for right events*/
+.right{
+	left: 29.5%;
+}
+.right::after{
+	left:-8px;
+}
+/*content box colour padding and radius for circular corner*/
+.content{
+	padding: 0.7em;
+    background-color:rgb(43, 16, 73);
+	border-radius: 4px;
+    border: 1px solid white;
+    box-shadow: 5px 5px rgb(101, 25, 163);
+
+}
+
+.content:hover{
+    background-color:rgb(7, 0, 15);
+
+}
+
+.job{
+    color:rgb(161, 145, 253);
+}
+
 
 
 /*My Projects Section*/
