@@ -51,22 +51,18 @@
                 and feel free to explore.
                 </p>
                 <div class = "social-list">
-                    <a class = "social-list-item" href = "https://www.linkedin.com/in/kaushik-vejju-97b4731ab/" class = "footer-link">
+                    <a class = "social-list-item" target="_blank" href = "https://www.linkedin.com/in/kaushik-vejju-97b4731ab/" class = "footer-link">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
              
-                    <a class = "social-list-item" href = "https://github.com/KaushikVejju" class = "footer-link">
+                    <a class = "social-list-item" target="_blank" href = "https://github.com/KaushikVejju" class = "footer-link">
                         <i class="fa-brands fa-github"></i>
                     </a>
 
-                    <button id = "resumeButton" class = "header-button" type="button">Resume
+                    <button onclick="window.open('/documents/KaushikVejjuResume.pdf','_blank');" class = "header-button" type="button">Resume
                         <a href = "https://www.hackerrank.com/"></a>
                     </button>
-                    <script type="text/javascript">
-                        document.getElementById("resumeButton").onclick = function () {
-                            location.href = "";
-                        };
-                    </script>
+                    
                 </div>
                 
             </div>
@@ -155,22 +151,17 @@
                         such as pandas, numpy, and seaborn to analyze and visualize Netflix data from
                         2019.
                     </p>
-                    <button id = "myPython" class = "project-button" type="button">Click To View</button>
-                    <script type="text/javascript">
-                        document.getElementById("myPython").onclick = function () {
-                            location.href = "https://www.kaggle.com/kaushikvejju/netflixdataset/notebook";
-                        };
-                    </script>
+                    <button onclick="window.open('https://www.kaggle.com/kaushikvejju/netflixdataset/notebook', '_blank');" class = "project-button" type="button"> Click To View </button>
 
                     
                 </div>
                 <div class = "project">
                     <h2>Java Fighting Project</h2>
-                    <p> Utilized Java to develop a two player game that simulates a fight between two 
+                    <p> Java-based game that simulates a fight between two 
                         characters. However, the game has a twist: players can only attack when guessing the
                         correct random number.
                     </p>
-                    <button class = "project-button" type="button">Click To View</button>
+                    <button onclick="window.open('https://github.com/KaushikVejju/MarvelFightingGame/blob/main/marvelProject/src/marvelProject/marvelDriver.java', '_blank');" class = "project-button" type="button"> Source Code </button>
 
                 </div>
             </div>
