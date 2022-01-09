@@ -11,8 +11,7 @@
     <link rel = "stylesheet" href = "css/style.css">
 </head>
 <body>
-    <!-- Header: easy way to do is emmet abbreviation
-    This can be accomplished by saying header#showcase.grid-->
+    
     <header>
         <!-- Navigation-->
         <div class="topnav" id="myTopnav">
@@ -21,10 +20,11 @@
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"></i>
             </a>
           </div>
 
+          <!--Some JS to make Navigation Bar responsive-->
           <script>
             function myFunction() {
               var x = document.getElementById("myTopnav");
@@ -36,8 +36,8 @@
             }
             </script>
 
-        <!-- background has to be different element-->
         <br>
+        <!-- Intro Section: Box1-->
         <div class= box1>
             <div class = "box1-image">
                 <img class = "kaushik" src = "img/kaushik.PNG" 
@@ -51,6 +51,9 @@
                 and feel free to explore.
                 </p>
                 <div class = "social-list">
+                    <a class = "social-list-item" target="_blank" href = "mailto:kaush2003@gmail.com" class = "footer-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                     <a class = "social-list-item" target="_blank" href = "https://www.linkedin.com/in/kaushik-vejju-97b4731ab/" class = "footer-link">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
@@ -66,20 +69,15 @@
                 
             </div>
         </div>
-
-        
-        
-        <!-- Create an a tag with a class of btn-->
-
     </header>
     <br>
     <main id="id">
-
-        <hr>        <!-- Section A will be education-->
+        <hr>
+        <!-- Education Section-->
         <section id = "edu" class = "section-education">
             <h1 class = "education-title" style= "text-align: center"> Education <i class="fas fa-school"></i></h1>
+            <!--Using CSS Grid for this section-->
             <div class="grid-container-element">
-
                 <div class="grid-child-element purple">
                      <h2 class = "monroe"> Monroe Township High School </h2>
                      <i>2017-2021</i>
@@ -97,77 +95,62 @@
             </div>
         </section>
 
-        <hr width = 900px>
-        <!-- Revise this section-->
-        
+        <hr>
+        <!--Experience Section-->        
         <section id = "experience" class = "section-experience">
             <h1 class = "title-experience" style= "text-align: center"> Experience <i class="fas fa-briefcase"></i></h1>
+            <!--Creating Timeline-->
             <div class="main-container">
-                <!-- event 1st of timeline -->
-                <div class="text-wrapper right">
-                    <!-- all text content of timeline -->
+                <div class="text-wrapper right"> <!-- Timeline events will appear to the right-->
                     <div class="content">
                         <p class = "job"><b>Junior Quantitative Analyst</b></p>
                         <p>Smith Investment Fund</p>
                         <p>October 2021 - Present</p>
                     </div>
-                </div>
-                <!-- event 1st of timeline -->
-
-                
+                </div>                
                 <div class="text-wrapper right">
-                    <!-- all text content of timeline -->
                     <div class="content">
                         <p class = "job"><b>Technology Intern</b></p>
                         <p>Finacle Soft Inc.</p>
                         <p>July 2020 - September 2020</p>
                     </div>
                 </div>
-                <!-- event 1st of timeline -->
                 <div class="text-wrapper right">
-                    <!-- all text content of timeline -->
                     <div class="content">
                         <p class = "job"><b>Instructor</b></p>
                         <p>STEAM Works Studio</p>
                         <p>July 2021 - September 2021</p>
                     </div>
-                </div>
-                <!-- event 1st of timeline -->
-                
+                </div>                
             </div>
         </body>
         </html>
         </section>
-
-        <hr width = 1px>
-
+        <hr>
+        <!--Project Section; Will use Flexbox-->
         <section id = "projects" class = "section-projects">
             <h1 class = "title-projects" style= "text-align: center"> Projects <i class="fas fa-code"></i></h1>
             <div class="projects-container">
+                
                 <div class = "project">
-                    <h2>Netflix Dataset Analysis</h2>
+                    <h2>Random Punch</h2>
+                    <p> This is Java-based game that simulates a fight between two characters, a Hero and a Villain. 
+                        However, the game has a twist: players can only attack when guessing the correct random number.
+                    </p>
+                    <button onclick="window.open('https://github.com/KaushikVejju/Random-Punch', '_blank');" class = "project-button" type="button"> Source Code </button>
+                </div>
+                <div class = "project">
+                    <h2>Netflix Analysis</h2>
                     <p> Created using Kaggle Kernels. Utilized Python libraries & packages 
                         such as pandas, numpy, and seaborn to analyze and visualize Netflix data from
                         2019.
                     </p>
                     <button onclick="window.open('https://www.kaggle.com/kaushikvejju/netflixdataset/notebook', '_blank');" class = "project-button" type="button"> Click To View </button>
-
-                    
-                </div>
-                <div class = "project">
-                    <h2>Random Punch</h2>
-                    <p> This is Java-based game that simulates a fight between two 
-                        characters, a Hero and a Villain. However, the game has a twist: players can only attack when guessing the
-                        correct random number.
-                    </p>
-                    <button onclick="window.open('https://github.com/KaushikVejju/Random-Punch', '_blank');" class = "project-button" type="button"> Source Code </button>
-
                 </div>
             </div>
         </section>
     </main>
     <footer>
     </footer>
-
 </body>
 </html>

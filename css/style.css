@@ -1,104 +1,30 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color:rgb(240, 240, 240);
+/*General Features*/
+body {
+  background-color: rgb(240, 240, 240);
 }
 
-header{
-
-    
-   padding-top: 1em;
-   max-width: 900px;
-   display: block;
-   margin: 0 auto;
-}
-.header-button{
-    text-decoration: none;
-    padding: 0.5em;
-    color: white;
-    background-color:rgb(104, 74, 189);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-}
-.header-button:hover{
-    background-color:rgba(30, 11, 61, 0.863);   
-
-}
-p{
-    font-size: 18px;
+hr {
+  margin: 0 auto;
+  width: 70%;
 }
 
-h2{
-    color:rgb(130, 122, 238);
+p {
+  font-size: 18px;
 }
 
-.box1{
-    animation: fadein 2s;
-    display: flex;
-    align-items: stretch;
-}
-.my-name{
-    color:rgb(92, 84, 207)
-}
-.kaushik{
-    
-    border-radius: 50%;
-    border: 5px solid rgb(92, 84, 207);
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25);
-    animation: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-.box1-content{
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25);
-
-    padding: 1em;
-    
-    margin: 1em;
-    font-family: 'Nunito', sans-serif;
-}
-
-.hello{
-    overflow: hidden;
-    white-space: nowrap; 
-    animation: 
-    typing 3.5s steps(40, end);
-    
-}
-
-.social-list{
-    display: flex;
-}
-.social-list-item{
-    font-size: 40px;
-    color: rgb(104, 74, 189);
-    margin-right: 0.5em;
-    text-decoration: none;
-}
-
-@media  screen and (max-width: 600px) {
-
-    .kaushik{
-        display: block;
-        margin: 0 auto;
-    }
- 
-    .box1{
-        display: grid;
-        text-align: center;
-    }
+h2 {
+  color: rgb(130, 122, 238);
 }
 
 /* Navigation*/
 .topnav {
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25);
-    animation: fadein 2s;
-    background-color: rgb(247, 247, 247);
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  animation: fadein 2s;
+  background-color: rgb(247, 247, 247);
   overflow: hidden;
 }
 
@@ -108,9 +34,8 @@ h2{
   color: #563e99;
   padding: 14px 16px;
   text-decoration: none;
-font-family: 'Nunito', sans-serif;
-    font-size: 17px;
-  
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
 }
 
 /* Change the color of links on hover */
@@ -119,294 +44,348 @@ font-family: 'Nunito', sans-serif;
   color: rgb(83, 77, 155);
 }
 
-
 .topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
     display: none;
-}
-
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
- }
-
- /* For each section */
- 
- /*Grid For Education */
-
- hr{
-     margin: 0 auto;
-     width: 70%;
- }
- .education-title{
-    margin: 0 auto;
-    margin-top: 0.5em;
-    margin-bottom: 0.3em;
-     max-width: 200px;
-     padding: 0.2em;
-     border-radius: 5px;
-     color: rgb(103, 33, 216);
-
-
-}
- .section-education{
-    animation: fadein 2s;
-     border-radius: 10px;    
-     font-family: 'Nunito', sans-serif;
-    padding: 0.5em;
-     max-width: 900px;
-     margin: 0 auto;
- }
- .grid-container-element {
-     text-align: center;
-
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-} 
-.grid-child-element { 
-
-    padding: 0.5em;
-    margin: 10px; 
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    
-
-    background-color:white;
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25);
-    
-
-    
-}
-.grid-child-element:hover{
-    background-color:rgb(245, 245, 245);
-}
-
-
-
-.monroe{
-    color:rgb(72, 56, 161);
-}
-.umd{
-
-    color: rgb(182, 60, 60);
-
-}
-
-.school-img{
-    margin: 0 auto;
+  }
+  .topnav a.icon {
+    float: right;
     display: block;
-    padding-top: 3px;
-    height: 40px;;
-    width: 40px;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 
-@media  screen and (max-width: 600px) {
+/*Header*/
+header {
+  padding-top: 1em;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
 
-    .grid-container-element{
-        grid-template-columns: 1fr;
-    }
-    
+.header-button {
+  text-decoration: none;
+  padding: 0.5em;
+  color: white;
+  background-color: rgb(104, 74, 189);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.header-button:hover {
+  background-color: rgb(78, 56, 138);
+}
+
+/*Intro (Part of Header)*/
+.box1 {
+  animation: fadein 2s;
+  display: flex;
+  align-items: stretch;
+}
+.my-name {
+  color: rgb(92, 84, 207);
+}
+
+/*My Picture*/
+.kaushik {
+  border-radius: 50%;
+  border: 5px solid rgb(92, 84, 207);
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  animation: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.box1-content {
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  padding: 1em;
+  margin: 1em;
+  font-family: "Nunito", sans-serif;
+}
+
+.hello {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end);
+}
+
+/*List of Socials*/
+.social-list {
+  display: flex;
+}
+.social-list-item {
+  font-size: 40px;
+  color: rgb(104, 74, 189);
+  margin-right: 0.5em;
+  text-decoration: none;
+}
+
+.social-list-item:hover {
+  color: rgb(78, 56, 138);
+}
+
+@media screen and (max-width: 600px) {
+  .kaushik {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .box1 {
+    display: grid;
+    text-align: center;
+  }
+}
+
+/*Education Section*/
+
+.education-title {
+  margin: 0 auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+  max-width: 200px;
+  padding: 0.2em;
+  border-radius: 5px;
+  color: rgb(103, 33, 216);
+}
+.section-education {
+  animation: fadein 2s;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  padding: 0.5em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.grid-container-element {
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-child-element {
+  padding: 0.5em;
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+
+  background-color: white;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+}
+.grid-child-element:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.monroe {
+  color: rgb(72, 56, 161);
+}
+.umd {
+  color: rgb(182, 60, 60);
+}
+
+.school-img {
+  margin: 0 auto;
+  display: block;
+  padding-top: 3px;
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container-element {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*My Experience Section*/
 
-.section-experience{
-
-    border-radius: 10px;
-    animation: fadein 2s;
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    padding: 0.5em;
-    max-width: 900px;
-    margin: 0 auto;
-    
-    
+.section-experience {
+  border-radius: 10px;
+  animation: fadein 2s;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  padding: 0.5em;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.title-experience{
-    margin: 0 auto;
-    margin-top: 0.5em;
-    font-family: 'Nunito', sans-serif;
-    color: rgb(103, 33, 216);
-    max-width: 200px;
-     padding: 0.2em;
-     border-radius: 5px;
+.title-experience {
+  margin: 0 auto;
+  margin-top: 0.5em;
+  font-family: "Nunito", sans-serif;
+  color: rgb(103, 33, 216);
+  max-width: 200px;
+  padding: 0.2em;
+  border-radius: 5px;
 }
 
-.main-container{
-	position: relative;
-    margin: 1em;
+.main-container {
+  position: relative;
+  margin: 1em;
 }
 /*creating line for timeline*/
-.main-container::after{
-	content: '';
-	position: absolute;
-	width: 2px;
-	background-color: #6e09e2;
-	top:0;
-	bottom: 0;
-	right: 70%;
+.main-container::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #6e09e2;
+  top: 0;
+  bottom: 0;
+  right: 70%;
 }
 /*Adjusting box of all content*/
-.text-wrapper{
-	padding: 1em 2em;
-	position: relative;
-	width:50%;
-	box-sizing: border-box;
-	
-
+.text-wrapper {
+  padding: 1em 2em;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
 }
-.text-wrapper:after{
-    content: '';
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color:rgb(48, 37, 112);
-    border: 4px solid rgb(124, 107, 218);
-    position: absolute;
-    top: 5px;
-    z-index: 1;
-	
+.text-wrapper:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(48, 37, 112);
+  border: 4px solid rgb(124, 107, 218);
+  position: absolute;
+  top: 5px;
+  z-index: 1;
 }
 
-/*for right events*/
-.right{
-	left: 29.5%;
+/*for each timeline event*/
+.right {
+  left: 29.5%;
 }
-.right::after{
-	left:-8px;
-}
-/*content box colour padding and radius for circular corner*/
-.content{
-    width: 100%;
-	padding: 0.7em;
-    background-color:white;
-    color: black;
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25);
-    border-radius: 5px;
-
-
-
+.right::after {
+  left: -8px;
 }
 
-.content:hover{
-    background-color:rgb(245, 245, 245);
-
+.content {
+  width: 100%;
+  padding: 0.7em;
+  background-color: white;
+  color: black;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
-.job{
-    color:rgb(130, 122, 238);
+.content:hover {
+  background-color: rgb(245, 245, 245);
 }
 
-
+.job {
+  color: rgb(130, 122, 238);
+}
 
 /*My Projects Section*/
-.section-projects{
+.section-projects {
+  animation: fadein 2s;
 
-    animation: fadein 2s;
+  border-radius: 10px;
 
-    border-radius: 10px;
-
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0.5em;
-    font-family: 'Nunito', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.5em;
+  font-family: "Nunito", sans-serif;
 }
 
-.title-projects{
-    margin: 0 auto;
-    margin-top: 0.5em;
-    color: rgb(103, 33, 216);
-    max-width: 200px;
-     padding: 0.2em;
-     border-radius: 5px;
-
-     
+.title-projects {
+  margin: 0 auto;
+  margin-top: 0.5em;
+  color: rgb(103, 33, 216);
+  max-width: 200px;
+  padding: 0.2em;
+  border-radius: 5px;
 }
 
-.projects-container{
-    display: flex;
-    justify-content: center;
-
+.projects-container {
+  display: flex;
+  justify-content: center;
 }
-.project{
-    text-align: center;
-    border-radius: 10px;
-    padding: 0.5em;
-    width: 325px;
-    margin: 1em;
-    background-color: white;
-    color: black;
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25);
+.project {
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5em;
+  width: 325px;
+  margin: 1em;
+  background-color: white;
+  color: black;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
 }
-.project:hover{
-    background-color:rgb(245, 245, 245);
-
+.project:hover {
+  background-color: rgb(245, 245, 245);
 }
 
-.project-button{
-    padding: 0.5em;
-    border: 1px solid white;
-    background-color:rgb(103, 33, 216);
-    color: white;
-    border-radius: 10px;
+.project-button {
+  padding: 0.5em;
+  border: 1px solid white;
+  background-color: rgb(103, 33, 216);
+  color: white;
+  border-radius: 10px;
 }
-.project-button:hover{
-
-    background-color:rgb(69, 19, 151);
-
+.project-button:hover {
+  background-color: rgb(69, 19, 151);
 }
 
-@media  screen and (max-width: 600px) {
-
-    
-    .projects-container{
-        display:block;
-    }
-    .project{
-        
-        margin: 1em auto;
-    }
-    
-    
+@media screen and (max-width: 650px) {
+  .projects-container {
+    display: block;
+  }
+  .project {
+    margin: 1em auto;
+  }
 }
 
 /*Footer*/
-footer{
-    height: 2em;
+footer {
+  height: 2em;
 }
-
-
 
 /* Animations */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 4px); }
-    100%   { transform: translate(0, -0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 4px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
