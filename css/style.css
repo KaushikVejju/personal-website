@@ -310,9 +310,9 @@ header {
   color: rgb(130, 122, 238);
 }
 @media screen and (max-width: 600px) {
-  .content_img {
-    height: 40px;
-    width: 40px;
+  .content {
+    display:block;
+   
   }
   
 }
