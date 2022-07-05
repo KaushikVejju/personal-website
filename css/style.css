@@ -239,16 +239,6 @@ header {
   border-radius: 5px;
 }
 
-.content_img {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-}
-
-
-
 
 .main-container {
   position: relative;
@@ -293,7 +283,6 @@ header {
 }
 
 .content {
-  position: relative;
   width: 100%;
   padding: 0.7em;
   background-color: white;
@@ -309,13 +298,7 @@ header {
 .job {
   color: rgb(130, 122, 238);
 }
-@media screen and (max-width: 600px) {
-  .content {
-    display:block;
-   
-  }
-  
-}
+
 /*My Projects Section*/
 .section-projects {
   animation: fadein 2s;
