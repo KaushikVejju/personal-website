@@ -239,6 +239,17 @@ header {
   border-radius: 5px;
 }
 
+.content_img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+
+
+
 .main-container {
   position: relative;
   margin: 1em;
@@ -255,6 +266,7 @@ header {
 }
 /*Adjusting box of all content*/
 .text-wrapper {
+  
   padding: 1em 2em;
   position: relative;
   width: 50%;
@@ -281,6 +293,7 @@ header {
 }
 
 .content {
+  position: relative;
   width: 100%;
   padding: 0.7em;
   background-color: white;
@@ -296,7 +309,13 @@ header {
 .job {
   color: rgb(130, 122, 238);
 }
-
+@media screen and (max-width: 600px) {
+  .content_img {
+    height: 40px;
+    width: 40px;
+  }
+  
+}
 /*My Projects Section*/
 .section-projects {
   animation: fadein 2s;
