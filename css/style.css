@@ -178,9 +178,10 @@ header {
   margin: 0 auto;
 }
 .grid-container-element {
+  margin: 0 auto;
   text-align: center;
-
-  display: grid;
+  width: 70%;
+  display: block;
   grid-template-columns: 1fr 1fr;
 }
 .grid-child-element {
@@ -295,8 +296,30 @@ header {
   background-color: rgb(245, 245, 245);
 }
 
+.content-job {
+  display:flex;
+}
 .job {
   color: rgb(130, 122, 238);
+
+}
+#job-description {
+  flex: 1;
+  width: 60%;
+  margin-right: 20px;
+}
+#job-image {
+  flex: 1;
+  position: relative;
+}
+#job-logo {
+  
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+
+
 }
 
 /*My Projects Section*/
