@@ -2,188 +2,186 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"crossorigin="anonymous" />
-    <link rel = "shortcut icon" type = "image/png" href = "kvlogo.png">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-            <title>Kaushik Vejju: Personal Website</title>
+    <link rel = "shortcut icon" type = "image/png" href = "img/kvlogo.png">
     <link rel = "stylesheet" href = "css/style.css">
+    <title>Kaushik Vejju: Personal Website</title>
 </head>
 <body>
-    
+    <!--Nav Bar-->
     <header>
-        <!-- Navigation-->
-        <div class="topnav" id="myTopnav">
-            <a href="#home">Home</a>
-            <a href="#edu">Education</a>
+        <div class="navbar" id="navbar">
+            <a href="#home" style="color: rgb(68, 40, 190)"><b><i>Kaushik Vejju</i></b></a>
+            <a href="#about-me">About Me</a>
             <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
             </a>
-          </div>
-
-          <!--Some JS to make Navigation Bar responsive-->
-          <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-            </script>
-
-        <br>
-        <!-- Intro Section: Box1-->
-        <div class= box1>
-            <div class = "box1-image">
-                <img class = "kaushik" src = "img/kaushik.PNG" 
-                 height = "250" width = "250" alt = "Kaushik Vejju">
-            </div>
-            <div class = "box1-content">
-                <h1 class = "hello"> Hello, I'm <b class = "my-name">Kaushik</b></h1>
-                <p> I'm a Computer Science student at the
-                University of Maryland with an interest in software development, data science, and fintech. Welcome to my site,
-                and feel free to explore.
-                </p>
-                <div class = "social-list">
-                    <a class = "social-list-item" target="_blank" href = "mailto:kaush2003@gmail.com" class = "footer-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a class = "social-list-item" target="_blank" href = "https://www.linkedin.com/in/kaushik-vejju-97b4731ab/" class = "footer-link">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-             
-                    <a class = "social-list-item" target="_blank" href = "https://github.com/KaushikVejju" class = "footer-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <button onclick="window.open('KaushikVejjuResume.pdf','_blank');" class = "header-button" type="button">Resume
-                    </button>
-                    
-                </div>
-                
-            </div>
         </div>
     </header>
-    <br>
-    <main id="id">
-        <hr>
-        <!-- Education Section-->
-        <section id = "edu" class = "section-education">
-            <h1 class = "education-title" style= "text-align: center"> Education <i class="fas fa-school"></i></h1>
-            <!--Using CSS Grid for this section-->
-            <div class="grid-container-element">
-                <div class="grid-child-element green">
-                    <h2 class = "umd"> University of Maryland: College Park </h2>
-                     <i>2021-Present</i>
-                     <img  class = "school-img" src = "img/terplogo.png">
-                     <p><b>Activities & Societies: </b> College Park Scholars, Smith Investment Fund, Alpha Kappa Psi Professional Business Fraternity
-                    </div>
+        <!-- Script for Responsive Nav Bar-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+            x.className += " responsive";
+            } else {
+            x.className = "navbar";
+            }
+        }
+        </script>
+    <!-- Introduction Div-->
+    <div id="home" class="intro-div">
+        <div class="intro-box">
+            <div class="intro-img">
+                <img class = "kaushik-pic" src = "img/kaushik.PNG" alt="kaushik-display" height="250" width="250">
             </div>
-        </section>
-
-        <hr>
-        <!--Experience Section-->        
-        <section id = "experience" class = "section-experience">
-            <h1 class = "title-experience" style= "text-align: center"> Experience <i class="fas fa-briefcase"></i></h1>
-            <!--Creating Timeline-->
-            <div class="main-container">
-
-                 <div class="text-wrapper right">
-                    <div class="content">
-                        <div class="content-job">
-                            <div id="job-description">
-                                <p class = "job"><b>SDE Intern</b></p>
-                                <p>Zillow Group</p>
-                                <p>May 2023 - Present</p>
-                            </div>
-                            <div id="job-image">
-                                <img id="job-logo" src="./img/zillow.png" alt="zillow" height="45px" width="45px">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="text-wrapper right">
-                    <div class="content">
-                        <div class="content-job">
-                            <div id="job-description">
-                                <p class = "job"><b>Junior Quantitative Analyst</b></p>
-                                <p>Smith Investment Fund</p>
-                                <p>Oct. 2021 - Present</p>
-                            </div>
-                            <div id="job-image">
-                                <img id="job-logo" src="./img/SIF-Logo-Red-White-Outline-No-Border-thick.png" alt="sif" height="45px" width="45px">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-wrapper right">
-                    <div class="content">
-                        <div class="content-job">
-                            <div id="job-description">
-                                <p class = "job"><b>Teaching Assistant</b></p>
-                                <p>UMD CS Department</p>
-                                <p>Aug. 2022 - Jan. 2023</p>
-                            </div>
-                            <div id="job-image">
-                                <img id="job-logo" src="./img/umdcs.jpg" alt="umd" height="50px" width="50px">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-wrapper right"> <!-- Timeline events will appear to the right-->
-                    <div class="content">
-                        <div class="content-job">
-                            <div id="job-description">
-                                <p class = "job"><b>Software Development Intern</b></p>
-                                <p>Prudential Financial</p>
-                                <p>June 2022 - August 2022</p>
-                            </div>
-                            <div id="job-image">
-                                <img id="job-logo" src="./img/prudential.png" alt="pru" height="50px" width="50px">
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>                
-               
-                             
-            </div>
-        </body>
-        </html>
-        </section>
-        <hr>
-        <!--Project Section; Will use Flexbox-->
-        <section id = "projects" class = "section-projects">
-            <h1 class = "title-projects" style= "text-align: center"> Projects <i class="fas fa-code"></i></h1>
-            <div class="projects-container">
-                
-                <div class = "project">
-                    <h2>SIFSearch (Proof of Concept) </h2>
-                    <p> Developed using the Django framework and Algolia's Search API, this is a proof-of-concept for an internal search engine
-                        for the Smith Investment Fund, a student-led organization at the University of Maryland that focuses on investment
-                        strategies. The goal of this engine is to store the essential files/media that the club uses and search for these media
-                        entries with ease.
+            <div class = "intro-about-me">
+                <div class="intro-text">
+                    <h1> Hello, I'm <b class = "my-name">Kaushik</b>.</h1>
+                    <p> 
+                        Thank you for visiting my website! Here, you can learn more about my education, experience, and skills.
+                        Feel free to explore, and click the buttons below to contact me and check out my socials!
                     </p>
-                    <button onclick="window.open('https://github.com/KaushikVejju/SIFSearch', '_blank');" class = "project-button" type="button"> Source Code </button>
                 </div>
-                <div class = "project">
-                    <h2>Student Dataset Analysis & Regression Model</h2>
-                    <p> This is Jupyter Notebook that performs exploratory dataset analysis on student-related data (GPA, Major, etc.) to identify optimal features 
-                        for a regression model that predicts a student’s GPA, and utilizes pandas methods to preprocess and extract new features from the dataset.
-                        3 regression models (Decision Tree, KNN, Linear Regression) are also applied on the data and evaluated based on their MSE.
-                    </p>
-                    <button onclick="window.open('KaushikVejjuStudentDatasetAnalysis.pdf','_blank');" class = "project-button" type="button"> Click To View </button>
+                <div class="social-list-container">
+                    <div class="social-list">
+                        <a class = "social-list-item" target="_blank" href = "mailto:kaush2003@gmail.com" class = "footer-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a class = "social-list-item" target="_blank" href = "https://www.linkedin.com/in/kaushik-vejju-97b4731ab/" class = "footer-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    
+                        <a class = "social-list-item" target="_blank" href = "https://github.com/KaushikVejju" class = "footer-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <button onclick="window.open('pdfs/KaushikVejjuResume.pdf','_blank');" class = "resume-button" type="button">Resume</button>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+    <hr>
+    <main>
+        <section id = "about-me" class="about-me">
+            <h1 style="text-align: center; color:rgb(68, 40, 190);">About Me </h1>
+            <p>
+                I'm an undergraduate Computer Science student at the <b>University of Maryland, College Park</b>. Throughout my college
+                experience, I've had the opportunity to join different on-campus organizations and pursue work positions related to my
+                career interests.   Outside of school and work, I enjoy running, drawing, and watching movies. <br><br>
+                Currently, I'm interning at Zillow, where I'm working as a Software Development Intern under the Observability
+                Team to implement a proof-of-concept for a new monitoring framework. In the Summer of 2022, I interned at Prudential Financial, where I worked with Angular and 
+                Spring Boot to modernize a legacy application. Outside of my internships, I also worked as Teaching Assistant for my university's Introduction to Computer
+                Systems class, where I graded assignements and held office hours to provide course-related guidance to students.<br><br>
+                On campus, I'm involved in the Smith Investment Fund, where I'm collaborating with other students to develop technical-based internal tools to be used
+                by the club's Quantitative Team. In addition, I'm an alumni of  College Park Scholars, a two-year academic program focused on leadership, research,
+                and community service. Just recently, I became a newly inducted member of my school's Alpha Kappa Psi Professional Business Fraternity chapter. <br>
+            </p>
+        </section><hr>
+        <section id="experience" class="my-experience">
+            <h1 style="text-align: center; color:rgb(68, 40, 190);">My Experience <i class="fas fa-briefcase"></i></h1>
+            <div  class="experiences">
+                <div class="item">
+                    <h2> Zillow Group </h2>
+                    <p> SDE Intern </p>
+                    <img id="job-logo" src="./img/zillow.png" alt="zillow" height="45px" width="45px">
+                    <p><b>Tools + Skills<br></b> Golang, Prometheus, Grafana, M3DB, Locust </p>
+                </div>
+                <br>
+                <div class="item">
+                    <h2> Smith Investment Fund</h2>
+                    <p> Infrastructure Engineer </p>
+                    <img id="job-logo" src="./img/SIF-Logo-Red-White-Outline-No-Border-thick.png" alt="sif" height="45px" width="45px">
+                    <p><b>Tools + Skills<br></b>Python, Django, pandas, NumPy, Matplotlib, Jupyter Notebook </p>
+                </div>
+                <br>
+                <div class ="item">
+                    <h2>UMD CS Deparment </h2>
+                    <p> Teaching Assistant </p>
+                    <img id="job-logo" src="./img/umdcs.jpg" alt="umd" height="50px" width="50px">
+                    <p><b>Tools + Skills<br></b>C, MIPS Assembly, Unix, GDB, Valgrind </p>
+                </div>
+                <br>
+                <div class="item">
+                    <h2> Prudential Financial </h2>
+                    <p> SDE Intern </p>
+                    <img id="job-logo" src="./img/prudential.png" alt="pru" height="50px" width="50px">
+                    <p><b>Tools + Skills<br></b> Angular, Spring Boot, Node.js, Oracle DB </p>
+                </div>
+            </div>
+        </section><hr>
+        <section  id="skills" class="my-skills">
+            <h1 style="text-align: center; color:rgb(68, 40, 190);">My Skills <i class="fas fa-gear"></i></h1>
+            <div  class="skills">
+                <div class="item-skill">
+                    <h2>Languages </h2>
+                    <p>
+                            Java <i class="fab fa-java"></i>, C, Python <i class="fab fa-python"></i>, 
+                            Golang <i class="fa-brands fa-golang"></i>, JavaScript/TypeScript <i class="fa-brands fa-js"></i>, Ruby,
+                            OCaml, SQL</i>
+                    </p>
+                </div>
+                <br>
+                <div class="item-skill">
+                    <h2>Frameworks & Libraries</h2>
+                    <p>
+                        Spring Boot, Django, Angular <i class="fa-brands fa-angular"></i>, Express, 
+                        JUnit, pandas, NumPy, Matplotlib
+                    </p>
+                </div>
+                <br>
+                <div class="item-skill">
+                    <h2> Tools </h2>
+                    <p>
+                        Docker <i class="fa-brands fa-docker"></i>, Kubernetes </i>, Gitlab CI/CD  <i class="fa-brands fa-gitlab"></i>,
+                        Prometheus, Grafana, Postman, Node.js <i class="fa-brands fa-node-js"></i>, MongoDB, Jira <i class="fa-brands fa-jira"></i>
+                    </p>
+                </div>
+            </div>
+        </section><hr>
+        <section id="projects"  class="my-projects">
+            <h1 style="text-align: center; color:rgb(68, 40, 190);">My Projects <i class="fa-solid fa-code"></i></h1>
+            <div class="projects">
+                <div class="item-project">
+                    <h2>Student Dataset Analysis &  Regression Model</h2>
+                    <img id="job-logo" src="./img/jupyter.png" alt="jupyter" height="55px" width="50px">
+                    <p>
+                        Jupyter notebook with an exploratory dataset analysis of student-related data and 3
+                        regression models for predicting a student's GPA.
+                    </p>
+                    <button onclick="window.open('pdfs/KaushikVejjuStudentDatasetAnalysis.pdf','_blank');" class = "resume-button" type="button">View Project </button>
+                </div>
+                <br>
+                <div class="item-project">
+                    <h2>SIFSearch: <br> Internal Search Engine </h2>
+                    <img id="job-logo" src="./img/SIF-Logo-Red-White-Outline-No-Border-thick.png" alt="sif" height="50px" width="50px">
+
+                    <p>
+                        A Django-based search engine for the Smith Investment Fund, enabling users to upload
+                        and search for quantitative-finance related media.
+                    </p>
+                    <button onclick="window.open('https://github.com/KaushikVejju/SIFSearch','_blank');" class = "resume-button" type="button">View Project </button>
+                </div>
+                <br>
+                <div class="item-project">
+                    <h2> Prudential Hackathon: <br> Annuities Page </h2>
+                    <img id="job-logo" src="./img/prudential.png" alt="pru" height="55px" width="55px">
+
+                    <p>
+                        A modernized user-interface built with ReactJS and Amazon S3 to display annuity data in 
+                        an easily navigable manner.
+                    </p>
+                    <button class = "resume-button" type="button"> 1st Place Prize </button>
+                </div>
+            </div>
+        </section><hr>
+        <p style="text-align: center;"> © 2023 Kaushik Vejju</p>
     </main>
-    <footer>
-    </footer>
 </body>
 </html>
