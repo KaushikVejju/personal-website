@@ -8,10 +8,11 @@ html {
 
 p {
   font-size: 1.2rem;
+  color: white;
 }
 
 body {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(36, 36, 36);
   font-family: "Nunito", sans-serif;
 }
 
@@ -20,10 +21,9 @@ body {
 }
 
 .navbar {
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
   width: 100%;
   animation: fadein 2s;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(73, 73, 73);
   overflow: hidden;
   position: fixed;
   border-radius: 5px;
@@ -34,7 +34,7 @@ body {
 .navbar a {
   float: left;
   display: block;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -44,8 +44,8 @@ body {
 }
 
 .navbar a:hover {
- border-bottom: 2px solid rgb(83, 77, 155);;
- color: rgb(83, 77, 155);
+ border-bottom: 2px solid rgb(151, 142, 255);
+ color: rgb(151, 142, 255);
 }
 
 
@@ -66,15 +66,16 @@ body {
 
 .kaushik-pic {
   border-radius: 5px;
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  box-shadow: 0.25em 0.25em 0.75em rgba(255, 255, 255, 0.25);
 }
 
 .my-name {
-  color:  rgb(68, 40, 190);
+  color:  rgb(161, 154, 238);
 }
 .intro-about-me {
   border-radius: 5px;
-  background-color:  rgb(255, 255, 255);
+  background-color: rgb(73, 73, 73);
+  color: white;
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
   margin: 2em;
   padding: 1rem;
@@ -84,17 +85,15 @@ body {
 .resume-button {
   text-decoration: none;
   padding: 0.5em;
-  color: white;
-  background-color:  rgb(68, 40, 190);
-  border: 1px solid rgb(255, 255, 255);
+  color: black;
+  border: none;
+  background-color: rgb(161, 154, 238);
   border-radius: 5px;
 }
 
 .resume-button:hover {
-  background-color: rgb(36, 20, 109);
+  background-color: rgb(100, 87, 161);
 }
-
-
 
 /*List of Socials*/
 
@@ -104,13 +103,13 @@ body {
 }
 .social-list-item {
   font-size: 40px;
-  color:rgb(68, 40, 190);
+  color:rgb(161, 154, 238);
   margin-right: 0.5em;
   text-decoration: none;
 }
 
 .social-list-item:hover {
-  color: rgb(68, 40, 190);
+  color: rgb(100, 87, 161);
 }
 
 
@@ -120,7 +119,8 @@ body {
 
 .about-me, .my-experience, .my-skills, .my-projects {
   margin: 2em;
-  background-color:rgb(255, 255, 255);
+  background-color:rgb(73, 73, 73);
+  color: white;
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
   padding: 1em;
   border-radius: 5px;
@@ -139,7 +139,7 @@ hr {
 }
 
 h2 {
-  color: rgb(68, 40, 190);
+  color:rgb(161, 154, 238);
   text-align: center;
 }
 
@@ -147,9 +147,10 @@ h2 {
    margin-right: 0.5em;
    width: 25%;
    padding: 1em;
-   background-color: white;
+   background-color: rgb(58, 58, 58);
+   color: white;
    border-radius: 5px;
-   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+   box-shadow: 0.25em 0.25em 0.75em rgba(255, 255, 255, 0.25);
    text-align: center;
 }
 
@@ -159,11 +160,12 @@ h2 {
   padding: 1em;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  background-color: rgb(58, 58, 58);
+  box-shadow: 0.25em 0.25em 0.75em rgba(255, 255, 255, 0.25);
 }
 
 .item:hover, .item-skill:hover, .item-project:hover {
-background-color: rgb(240, 240, 240);
+background-color: rgb(37, 37, 37);
 }
 
 @media screen and (max-width: 600px) {
